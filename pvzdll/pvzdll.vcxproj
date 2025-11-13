@@ -89,6 +89,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Const.hpp" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MyBoard.hpp" />
     <ClInclude Include="MyEvents.hpp" />
