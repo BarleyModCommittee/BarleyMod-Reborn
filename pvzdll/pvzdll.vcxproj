@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5c5e59ff-db96-4b08-8753-b969fcf0f85f}</ProjectGuid>
+    <RootNamespace>dll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BarleyMod</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>pvzclass.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pvzclass.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="MyBoard.hpp" />
+    <ClInclude Include="MyEvents.hpp" />
+    <ClInclude Include="MyPlant\implement\Barley.hpp" />
+    <ClInclude Include="MyPlant\implement\Cactus.hpp" />
+    <ClInclude Include="MyPlant\implement\Cattail.hpp" />
+    <ClInclude Include="MyPlant\implement\DarkShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\DiamondShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\Endoflame.hpp" />
+    <ClInclude Include="MyPlant\implement\Explode_O_Nut.hpp" />
+    <ClInclude Include="MyPlant\implement\FumeShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\Garlic.hpp" />
+    <ClInclude Include="MyPlant\implement\GloomShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\GoldMagnet.hpp" />
+    <ClInclude Include="MyPlant\implement\HypnoShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\IceShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\Index.hpp" />
+    <ClInclude Include="MyPlant\implement\LeftRepeater.hpp" />
+    <ClInclude Include="MyPlant\implement\MagnetShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\Mangosteen.hpp" />
+    <ClInclude Include="MyPlant\implement\Marigold.hpp" />
+    <ClInclude Include="MyPlant\implement\Plantern.hpp" />
+    <ClInclude Include="MyPlant\implement\PuffShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\Repeater.hpp" />
+    <ClInclude Include="MyPlant\implement\RestingBarley.hpp" />
+    <ClInclude Include="MyPlant\implement\ScaredyShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\SeaShroom.hpp" />
+    <ClInclude Include="MyPlant\implement\SpikeRock.hpp" />
+    <ClInclude Include="MyPlant\implement\Squash.hpp" />
+    <ClInclude Include="MyPlant\implement\StarFruit.hpp" />
+    <ClInclude Include="MyPlant\implement\TallNut.hpp" />
+    <ClInclude Include="MyPlant\implement\Threepeater.hpp" />
+    <ClInclude Include="MyPlant\implement\ThymeWarp.hpp" />
+    <ClInclude Include="MyPlant\implement\Torchwood.hpp" />
+    <ClInclude Include="MyPlant\implement\UmbrellaLeaf.hpp" />
+    <ClInclude Include="MyPlant\implement\WallNut.hpp" />
+    <ClInclude Include="MyPlant\MyPlant.hpp" />
+    <ClInclude Include="MyPlant\PlantAbility.hpp" />
+    <ClInclude Include="MyZombie\implement\Index.hpp" />
+    <ClInclude Include="MyZombie\MyZombie.hpp" />
+    <ClInclude Include="MyZombie\ZombieAbility.hpp" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="MyBoard.cpp" />
+    <ClCompile Include="MyPlant\MyPlant.cpp" />
+    <ClCompile Include="MyZombie\MyZombie.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PlantEvents.cpp" />
+    <ClCompile Include="ZombieEvents.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pvzclass\pvzclass.vcxproj">
+      <Project>{703410a4-a7e7-4fff-a8d0-c7b8b5329575}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
