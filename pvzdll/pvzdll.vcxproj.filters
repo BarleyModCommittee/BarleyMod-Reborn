@@ -89,5 +89,8 @@
     <ClCompile Include="MyBoard.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BoardEvents.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

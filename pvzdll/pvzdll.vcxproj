@@ -108,6 +108,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BoardEvents.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="MyBoard.cpp" />
     <ClCompile Include="MyPlant\MyPlant.cpp" />
