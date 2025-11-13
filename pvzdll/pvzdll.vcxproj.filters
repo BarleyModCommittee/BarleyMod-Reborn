@@ -30,9 +30,6 @@
     <ClInclude Include="MyPlant\PlantAbility.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MyPlant\implement\GoldMagnet.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="MyPlant\implement\Index.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -48,76 +45,10 @@
     <ClInclude Include="MyPlant\implement\FumeShroom.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MyPlant\implement\Garlic.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\TallNut.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\MagnetShroom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Threepeater.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Repeater.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="MyPlant\implement\Cattail.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MyPlant\implement\HypnoShroom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\UmbrellaLeaf.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Torchwood.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\LeftRepeater.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\ThymeWarp.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Squash.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Mangosteen.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\DarkShroom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\DiamondShroom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Endoflame.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\GloomShroom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Marigold.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\IceShroom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\SpikeRock.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\WallNut.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Explode_O_Nut.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="MyPlant\implement\Cactus.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\Plantern.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyZombie\ZombieAbility.hpp">
@@ -126,19 +57,10 @@
     <ClInclude Include="MyPlant\implement\ScaredyShroom.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MyPlant\implement\Barley.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\RestingBarley.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="MyBoard.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyZombie\implement\Index.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyPlant\implement\StarFruit.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
