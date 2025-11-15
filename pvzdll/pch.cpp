@@ -1,4 +1,7 @@
 #include "pch.h"
+#include "direct.h"
+
+char working_dir[255];
 
 void init()
 {
@@ -13,5 +16,6 @@ void init()
 
 	PVZ::Memory::Variable = PVZ::Memory::AllocMemory(4);
 
+	_getcwd(working_dir, sizeof(working_dir));
 	Creator::AsmInit();
 }
