@@ -25,5 +25,6 @@ void init()
 
 	_getcwd(working_dir, sizeof(working_dir));
 	Creator::AsmInit();
+	EnableBackgroundRunning();
 	PVZEvent::OverrideSavedataFolderEvent((int)OverrideSavedataFolder);
 }
