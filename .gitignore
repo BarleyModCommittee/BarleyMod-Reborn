@@ -341,3 +341,5 @@ healthchecksdb
 
 # doxygen generated files
 doxygen/
+
+*.exe
