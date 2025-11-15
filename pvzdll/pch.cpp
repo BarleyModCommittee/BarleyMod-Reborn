@@ -3,6 +3,13 @@
 
 char working_dir[255];
 
+Draw::PString OverrideSavedataFolder()
+{
+	char buf[300];
+	snprintf(buf, 300, "%s\\savedata", working_dir);
+	return Draw::ToString(buf);
+}
+
 void init()
 {
 	PVZ::Memory::localExecute = true;
@@ -18,4 +25,5 @@ void init()
 
 	_getcwd(working_dir, sizeof(working_dir));
 	Creator::AsmInit();
+	PVZEvent::OverrideSavedataFolderEvent((int)OverrideSavedataFolder);
 }
