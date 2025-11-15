@@ -8,6 +8,8 @@
 #include "MyPlant/MyPlant.hpp"
 #include "MyZombie/MyZombie.hpp"
 
+extern char working_dir[255];
+
 void init();
 void InitPlantEvents();
 void InitZombieEvents();
